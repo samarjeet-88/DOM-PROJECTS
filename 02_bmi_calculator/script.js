@@ -14,10 +14,10 @@ form.addEventListener('submit',function(event){
     result.style.display=`block`
 
     const errorMessages=[]
-    if(Number.isNaN(heightValue)){
+    if(Number.isNaN(heightValue) || heightValue<0){
         errorMessages.push("<p>PLEASE PROVIDE A VALID HEIGHT</p>")
     }
-    if(Number.isNaN(weightValue)){
+    if(Number.isNaN(weightValue) || weightValue<0){
         errorMessages.push("<p>PLEASE PROIDE A VALID WEIGHT</p>")
     }
     if(errorMessages.length>0){
