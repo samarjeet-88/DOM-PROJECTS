@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM NUMBER GUESSING GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="upper-area">
+            <h2 class="heading">
+            NUMBER GUESSING GAME
+            </h2>
+            <p>TRY TO GUESS A RANDOM NUMBER BETWEEN 1 AND 100</p>
+            <p>YOU HAVE 10 ATTEMPTS TO GUESS THE RIGHT NUMBER.</p>
+        </div>
+
+        <div class="main-area">
+            <h1 class="main-area-h1">GUESS A NUMBER</h1>
+            <form class="form">
+                <input type="text" name="guessBox" id="guessBox">
+                <button type="submit" class="submit">SUBMIT GUESS</button>
+            </form>
+            <p class="result"></p>
+            <p class="previousGuess">Previous Guesses: </p>
+            <p class="guessRemaining">Guesses Remaining: 10</p>
+        </div>
+
+        <div class="pop-up-area"">
+            <p class="pop-up-area-p"></p>
+            <button type="submit" class="pop-up-area-button">RESTART GAME</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

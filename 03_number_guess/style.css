@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper-area{
+    margin-bottom: 60px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:40px;
+}
+.upper-area p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.main-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-area h1{
+    text-align: center;
+    font-size: 40px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.form input{
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+.form button{
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.form button:hover{
+    cursor: pointer;
+}
+.main-area p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+.pop-up-area{
+    display: none;
+}
+.pop-up-area-p{
+    font-size: larger;
+    text-align: center;
+}
+.pop-up-area-button{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.visible{
+    backdrop-filter: blur(5px);
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
